@@ -9,12 +9,13 @@ let antimatter = 0
 player.antimatter = ExpantaNum(0)
 function tick(){
     // thank me later
-    if (player.matter >= 100){
+    let anttimattergenerationyes = player.matter >= 100
+    if (anttimattergenerationyes){
     player.antimatter = player.antimatter.add(player.antimatter.root(player.matter))
     // I AM NEVER GONNA USE THE OLD METHOD OF DOING THIS AGAIN I HATE CALCULATING HOW SMALL OF A NUMBER I HAVE TO MULTIPLY BY FOR IT
     }
 }
-setInterval(tick(), 200)
+setInterval(tick(), 1000)
 // Functions for saving and loading player data.
 let saving = {}
 saving.save = function(){
