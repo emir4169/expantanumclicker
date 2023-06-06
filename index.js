@@ -13,9 +13,8 @@ function tick(){
     player.antimatter = player.antimatter.add(player.antimatter.root(player.matter))
     // I AM NEVER GONNA USE THE OLD METHOD OF DOING THIS AGAIN I HATE CALCULATING HOW SMALL OF A NUMBER I HAVE TO MULTIPLY BY FOR IT
     }
-    setInterval(tick(), 200)
 }
-tick()
+setInterval(tick(), 200)
 // Functions for saving and loading player data.
 let saving = {}
 saving.save = function(){
