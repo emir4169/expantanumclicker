@@ -1,0 +1,47 @@
+#topbar {
+	width: 100vw;
+	height: 35px;
+	max-height: 35px;
+	line-height: 35px;
+	top: 0;
+	position: fixed;
+	overflow: visible;
+	z-index: 101;
+	white-space: nowrap;
+	padding: 0;
+	margin: 0px;
+}
+#ticker {
+	width: calc(100vw - 330px);
+	height: 31px;
+    position:fixed;
+    float: right;
+	overflow: hidden;
+    margin-left: 1.2cm;
+	border: outset silver 10px;
+}
+#clickButton {
+	width: 150px;
+	height: 100px;
+	margin-top: 60px;
+	box-shadow: 0 4px 8px 0 #3188cc;
+	border-radius: 8px;
+	transition-duration: 0.3s;
+	cursor: pointer; 
+}
+#clickButton:hover {
+	box-shadow: 0 4px 8px 0 #979797;
+	border-radius: 15px;
+	transition-duration: 0.5s;
+}
+/* when you click it, box shadow color will change again, it'll be even more rounder, and will go a bit bigger */
+#clickButton:active {
+	box-shadow: 0 4px 8px 0 #666666;
+	border-radius: 20px;
+	-ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1); 
+}
+#ClickAmount{
+    margin-top: 60px
+}
