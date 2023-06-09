@@ -4,16 +4,12 @@ player = {}
 player.matter_per_click = ExpantaNum(1)
 player.matter = ExpantaNum(0)
 player.antimatter = ExpantaNum(0)
-function tick(){
-    // thank me later
-    let anttimattergenerationyes = player.matter.gte(100)
-    if (anttimattergenerationyes){
-    player.antimatter = player.antimatter.add(1)
-    // I AM NEVER GONNA USE THE OLD METHOD OF DOING THIS AGAIN I HATE CALCULATING HOW SMALL OF A NUMBER I HAVE TO MULTIPLY BY FOR IT
+var mainGameLoop = window.setInterval(function() {
+    if (player.matter.gte(100)){
+        player.antimatter.add(1)
+        document.getElementById("showantimatter").innerText = player.antimatter.toHyperE().toString()
     }
-}
-setInterval(tick(), 200)
-tick()
+  }, 200)
 // Functions for saving and loading player data.
 let saving = {}
 saving.save = function(){
@@ -34,8 +30,11 @@ saving.load = function(savefile){
 function matterclick()
 {
     player.matter =  player.matter.add(player.matter_per_click.add(player.antimatter.root(player.matter)))
-    player.matter_per_click = 1
+    player.matter_per_click = ExpantaNum(1)
     document.getElementById("showmatter").innerText = player.matter.toHyperE().toString()
-    document.getElementById("showantimatter").innerText = player.antimatter.toHyperE().toString()
 }
-news.begin();
+function loadnews(){
+    // This is absolutely busted. but for some reason news dont work if i dont do it this way.
+    news.begin()
+}
+loadnews()
