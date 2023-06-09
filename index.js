@@ -12,7 +12,8 @@ function tick(){
     // I AM NEVER GONNA USE THE OLD METHOD OF DOING THIS AGAIN I HATE CALCULATING HOW SMALL OF A NUMBER I HAVE TO MULTIPLY BY FOR IT
     }
 }
-setInterval(tick(), 1000)
+setInterval(tick(), 200)
+tick()
 // Functions for saving and loading player data.
 let saving = {}
 saving.save = function(){
