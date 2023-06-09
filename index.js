@@ -11,7 +11,7 @@ function tick(){
     // thank me later
     let anttimattergenerationyes = player.matter >= 100
     if (anttimattergenerationyes){
-    player.antimatter = player.antimatter.add(player.antimatter.root(player.matter))
+    player.antimatter = player.antimatter.add(1)
     // I AM NEVER GONNA USE THE OLD METHOD OF DOING THIS AGAIN I HATE CALCULATING HOW SMALL OF A NUMBER I HAVE TO MULTIPLY BY FOR IT
     }
 }
@@ -35,7 +35,7 @@ saving.load = function(savefile){
 function matterclick()
 {
     if (matter == 1) news.begin();
-    player.matter =  player.matter.add(player.matter_per_click)
+    player.matter =  player.matter.add(player.matter_per_click.add( player.antimatter.root(player.matter)))
     player.matter_per_click = 1
     document.getElementById("showmatter").innerText = player.matter.toHyperE().toString()
     document.getElementById("showantimatter").innerText = player.antimatter.toHyperE().toString()
