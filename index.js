@@ -34,7 +34,7 @@ function matterclick()
     document.getElementById("showmatter").innerText = player.matter.toHyperE().toString()
 }
 function loadnews(){
-    // This is absolutely busted. but for some reason news dont work if i dont do it this way.
+    // This is absolutely busted. aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
     news.begin()
 }
 loadnews()
