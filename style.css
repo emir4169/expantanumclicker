@@ -11,6 +11,16 @@
 	padding: 0;
 	margin: 0px;
 }
+/*#ticker {
+	width: calc(100vw - 330px);
+	width: 99%;
+	height: 31px;
+    position:fixed;
+	margin-right: 50px;
+	overflow: hidden;
+    margin-left: auto;
+	border: outset silver 10px;
+}*/
 #ticker {
 	width: calc(100vw - 330px);
 	height: 31px;
@@ -44,4 +54,15 @@
 }
 #ClickAmount{
     margin-top: 60px
+}
+body {
+  background: linear-gradient(#e66465, #9198e5);
+}
+.fade-out {
+	opacity: 1;
+	transition: opacity 1s ease-in-out;
+}
+
+.fade-out.fade-out-animation {
+		opacity: 0;
 }

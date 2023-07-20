@@ -1,4 +1,4 @@
-let news = {};
+news = {};
 
 news.begin = function () {
 	news.message();
@@ -29,5 +29,7 @@ news.news = [
 	"For saving please dm me in discord: AdamTheDumbPerson#7366",
 	"Powered by ExpantaNum.js and my lack of sanity.",
 	"No prestige layers?",
-	"I still need more \"news\" for the news ticker, go crazy. it doesnt even have to be real news, take inspiration from Antimatter Dimensions."
+	"I still need more \"news\" for the news ticker, go crazy. it doesnt even have to be real news, take inspiration from Antimatter Dimensions.",
+	"mfs after spamming the generate matter button with a autoclicker: \"I FOUND A BUG!!!!\"",
+	"mfw when someone reports the same raise by two bug for the 5423561238th time (it is not possible to fix it)"
 ];
