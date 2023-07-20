@@ -13,7 +13,7 @@ const player = {
   matter_per_click: ExpantaNum(1),
   matter: ExpantaNum(0),
   antimatter: ExpantaNum(0),
-  matter_per_second: ExpantaNum(0.5), // chaos
+  matter_per_second: ExpantaNum(1), // chaos
   dev: {
     divisor: 20,
     FreeDim1point5: function(){
@@ -56,7 +56,7 @@ const mainGameLoop = setInterval(() => {
 
   // Check if the player has enough matter to start antimatter production in Dimension 2
   if (player.dimension2.unlocked && player.matter.gte(200) && player.dimension2.automaticGenerationUnlocked) {
-    player.matter = player.matter.add(player.matter_per_second.times(player.dimension2.matterMultiplier));
+    player.antimatter = player.antimatter.add(player.matter_per_second.times(player.dimension2.matterMultiplier));
   }
 
   // Update the UI
